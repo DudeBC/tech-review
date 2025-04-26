@@ -1,0 +1,124 @@
+/* image carousel */
+.carousel {
+
+    max-width: 450px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel input {
+    display: none;
+}
+
+.images {
+    display: flex;
+    transition: transform 0.5s ease;
+    z-index: -10;
+}
+
+.image {
+    min-width: 100%;
+    transition: opacity 0.5s ease;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.dots {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 50%;
+    border: 1px gray solid;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#slide1:checked ~ .images {
+    transform: translateX(0); /* Show the first image */
+}
+
+#slide1:checked ~ .dots label[for="slide1"] {
+    background-color: gray;
+}
+
+#slide2:checked ~ .images {
+    transform: translateX(-100%); /* Show the second image */
+}
+
+#slide2:checked ~ .dots label[for="slide2"] {
+    background-color: gray;
+}
+
+#slide3:checked ~ .images {
+    transform: translateX(-200%); /* Show the third image */
+}
+
+#slide3:checked ~ .dots label[for="slide3"] {
+    background-color: gray;
+}
+
+/* Image captions */
+.image-caption {
+    margin: 0;
+    color: gray;
+    font-size: 14px;
+    text-align: right;
+}
+
+/*Body*/
+p {
+    margin-left: 25px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+/*Scores*/
+div.scores {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 50px;
+}
+
+div.score p {
+    font-size: 22px;
+    margin-left: 0;
+}
+
+div.Qscore {
+    width: 144px;
+    height: 144px;
+}
+
+div.Qscore p {
+    justify-self: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 30px;
+    margin-top: 7px;
+    font-size: 72px;
+}
+
+div.Cscore p {
+    justify-self: center;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 30px;
+    margin-top: 7px;
+    font-size: 72px;
+}
+
+div.Cscore {
+    width: 144px;
+    height: 144px;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Insider</title>
+    <link rel="stylesheet" href="tech.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+<header>
+  <input type="checkbox" id="menuCheck" class="menuCheck">
+  <label for="menuCheck" class="menuButton"><img src="images/menu.png" alt="Menu Button"></label>
+  <h1><i>Tech Insider</i></h1>
+  <a href="signup.html"><img src="images/profile.png" alt="Profile Icon"></a>
+  <nav class="sideMenu">
+    <ul>
+      <li><a href="index.html"><img src="images/homeMenu.png" alt="Home icon">Home</a></li>
+      <li><a href="review.html"><img src="images/review icon.png" alt="Review icon">Submit a Review</a></li>
+      <li><a href="news.html"><img src="images/news icon.png" alt="News icon">Recent News</a></li>
+      <li><a href="faq.html"><img src="images/asset1.png" alt="FAQ Icon">FAQ</a></li>
+      <li><a href="signup.html"><img src="images/profile.png" alt="Sign Up icon">Sign Up</a></li>
+    </ul>
+  </nav>
+</header>
+
+<div class="header2">
+<a href="index.html"><img src="images/Home.png" alt="Home button"></a>
+    <h1>Sign Up Form</h1>
+</div>
+
+<form action="signupConf.html">
+    <label for="user">Username:</label>
+    <input type="text" id="user">
+
+    <label for="pass">Create Password:</label>
+    <input type="text" id="pass">
+
+    <label for="confirm">Confirm Password:</label>
+    <input type="text" id="confirm">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email">
+
+    <p>Would you like to receive email news and updates?</p>
+    <div>
+        <label>
+            <input type="radio" name="mailNews" value="yes"> Yes
+        </label>
+    
+        <label>
+            <input type="radio" name="mailNews" value="no"> No
+        </label>
+    </div>
+
+
+    <label for="phone">Phone:</label>
+    <input type="tel">
+
+    <p>Would you like to receive text notifications?</p>
+    <div>
+        <label>
+            <input type="radio" name="textNews" value="yes"> Yes
+        </label>
+    
+        <label>
+            <input type="radio" name="textNews" value="no"> No
+        </label>
+    </div>
+
+
+    <label for="birthday">Birthday:</label>
+    <input type="date">
+
+    <div>
+        <input type="checkbox" id="terms">
+        <label for="terms">I acknowledge the terms and conditions.</label>
+    </div>
+
+    <button type="submit">Submit</button>
+</form>
